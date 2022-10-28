@@ -1,0 +1,437 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Extended Table 2. Comparison of feature selection methods - ANOVA, LASSO</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+    <style type="text/css">
+  .tg {
+    border-spacing: 0;
+    border-color: black;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .tg td {
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg th {
+    border-style: solid;
+    border-width: 1px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg .tg-header-left {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .tg .tg-right-border {
+    border-right: 2px solid;
+  }
+
+  .tg .tg-bottom-border {
+    border-bottom: 2px solid;
+    width: 100px
+  }
+
+  .tg .tg-4vrb {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .tg .tg-tfm4 {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+  </head>
+
+  <body>
+    <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-tfm4 tg-right-border" colspan="2" rowspan="2">Model</th>
+      <th class="tg-tfm4 tg-right-border" colspan="3">ANOVA</th>
+      <th class="tg-tfm4 tg-right-border" colspan="3">ANOVA + RF</th>
+      <th class="tg-tfm4" colspan="3">LASSO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tg-tfm4">
+      <td class="tg-right-border tg-bottom-border" colspan="2">Dataset</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-right-border tg-bottom-border">B</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-right-border tg-bottom-border">B</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-bottom-border">B</td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">
+        Decision <br />Tree
+      </td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+
+      <td class="tg-4vrb"><span>0.74</span></td>
+      <td class="tg-tfm4"><span>0.74</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.7</span></td>
+      <td class="tg-4vrb"><span>0.75</span></td>
+      <td class="tg-4vrb"><span>0.72</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.72</span></td>
+      <td class="tg-tfm4"><span>0.81</span></td>
+      <td class="tg-4vrb"><span>0.69</span></td>
+      <td class="tg-tfm4"><span>0.8</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+
+      <td class="tg-4vrb"><span>0.6</span></td>
+      <td class="tg-4vrb"><span>0.7</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.35</span></td>
+      <td class="tg-4vrb"><span>0.6</span></td>
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.38</span></td>
+      <td class="tg-tfm4"><span>0.63</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-tfm4"><span>0.52</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+
+      <td class="tg-4vrb"><span>0.63</span></td>
+      <td class="tg-tfm4"><span>0.76</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.5</span></td>
+      <td class="tg-4vrb"><span>0.65</span></td>
+      <td class="tg-4vrb"><span>0.72</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.52</span></td>
+      <td class="tg-4vrb"><span>0.76</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-tfm4"><span>0.63</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.74</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.63</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.65</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.79</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.69</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.74</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">
+        Random <br />Forest
+      </td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+
+      <td class="tg-4vrb"><span>0.79</span></td>
+      <td class="tg-4vrb"><span>0.77</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.78</span></td>
+      <td class="tg-4vrb"><span>0.8</span></td>
+      <td class="tg-4vrb"><span>0.78</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.78</span></td>
+      <td class="tg-tfm4"><span>0.83</span></td>
+      <td class="tg-tfm4"><span>0.8</span></td>
+      <td class="tg-tfm4"><span>0.86</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb"><span>0.8</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.49</span></td>
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb"><span>0.84</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.48</span></td>
+      <td class="tg-tfm4"><span>0.69</span></td>
+      <td class="tg-4vrb"><span>0.88</span></td>
+      <td class="tg-tfm4"><span>0.81</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+
+      <td class="tg-4vrb"><span>0.63</span></td>
+      <td class="tg-tfm4"><span>0.67</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.45</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb"><span>0.63</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.47</span></td>
+      <td class="tg-tfm4"><span>0.73</span></td>
+      <td class="tg-tfm4"><span>0.67</span></td>
+      <td class="tg-4vrb"><span>0.45</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+
+      <td class="tg-4vrb tg-bottom-border"><span>0.84</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.82</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.73</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.86</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.81</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.72</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.91</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.83</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.84</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">
+        Gradient <br />Boosting
+      </td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+
+      <td class="tg-4vrb"><span>0.8</span></td>
+      <td class="tg-4vrb"><span>0.77</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.77</span></td>
+      <td class="tg-4vrb"><span>0.81</span></td>
+      <td class="tg-4vrb"><span>0.77</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.78</span></td>
+      <td class="tg-tfm4"><span>0.85</span></td>
+      <td class="tg-tfm4"><span>0.83</span></td>
+      <td class="tg-tfm4"><span>0.87</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb"><span>0.8</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.5</span></td>
+      <td class="tg-tfm4"><span>0.71</span></td>
+      <td class="tg-4vrb"><span>0.8</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.51</span></td>
+      <td class="tg-tfm4"><span>0.71</span></td>
+      <td class="tg-tfm4"><span>0.91</span></td>
+      <td class="tg-tfm4"><span>0.76</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.52</span></td>
+      <td class="tg-4vrb"><span>0.69</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.5</span></td>
+      <td class="tg-tfm4"><span>0.8</span></td>
+      <td class="tg-4vrb"><span>0.71</span></td>
+      <td class="tg-tfm4"><span>0.58</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+      
+      <td class="tg-4vrb tg-bottom-border"><span>0.86</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.83</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.75</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.87</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.81</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.74</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.93</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.86</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.9</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">
+        Logistic <br />Regression
+      </td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+      
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.64</span></td>
+      <td class="tg-4vrb"><span>0.7</span></td>
+      <td class="tg-4vrb"><span>0.62</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.61</span></td>
+      <td class="tg-tfm4"><span>0.77</span></td>
+      <td class="tg-tfm4"><span>0.87</span></td>
+      <td class="tg-tfm4"><span>0.86</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+      
+      <td class="tg-4vrb"><span>0.5</span></td>
+      <td class="tg-4vrb"><span>0.63</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.32</span></td>
+      <td class="tg-4vrb"><span>0.52</span></td>
+      <td class="tg-4vrb"><span>0.57</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.29</span></td>
+      <td class="tg-tfm4"><span>0.56</span></td>
+      <td class="tg-tfm4"><span>0.92</span></td>
+      <td class="tg-tfm4"><span>0.64</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+      <td class="tg-4vrb"><span>0.66</span></td>
+      <td class="tg-4vrb"><span>0.7</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.58</span></td>
+      <td class="tg-4vrb"><span>0.69</span></td>
+      <td class="tg-4vrb"><span>0.71</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.62</span></td>
+      <td class="tg-4vrb"><span>0.78</span></td>
+      <td class="tg-tfm4"><span>0.79</span></td>
+      <td class="tg-tfm4"><span>0.74</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+      
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.71</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.67</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.73</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.71</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border">
+        <span>0.67</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.83</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.93</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.82</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">MLP</td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+      
+      <td class="tg-4vrb"><span>0.78</span></td>
+      <td class="tg-4vrb"><span>0.77</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.61</span></td>
+      <td class="tg-4vrb"><span>0.75</span></td>
+      <td class="tg-4vrb"><span>0.77</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.75</span></td>
+      <td class="tg-tfm4"><span>0.79</span></td>
+      <td class="tg-tfm4"><span>0.87</span></td>
+      <td class="tg-tfm4"><span>0.85</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+      
+      <td class="tg-tfm4"><span>0.65</span></td>
+      <td class="tg-4vrb"><span>0.81</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.39</span></td>
+      <td class="tg-4vrb"><span>0.6</span></td>
+      <td class="tg-4vrb"><span>0.83</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.57</span></td>
+      <td class="tg-4vrb"><span>0.6</span></td>
+      <td class="tg-tfm4"><span>0.88</span></td>
+      <td class="tg-tfm4"><span>0.64</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+      
+      <td class="tg-4vrb"><span>0.72</span></td>
+      <td class="tg-4vrb"><span>0.65</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.56</span></td>
+      <td class="tg-4vrb"><span>0.73</span></td>
+      <td class="tg-4vrb"><span>0.65</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.56</span></td>
+      <td class="tg-4vrb"><span>0.78</span></td>
+      <td class="tg-tfm4"><span>0.83</span></td>
+      <td class="tg-tfm4"><span>0.61</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+      
+      <td class="tg-4vrb tg-bottom-border"><span>0.84</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.81</span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span>0.62</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.83</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.81</span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span>0.73</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.88</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.91</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.83</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border" rowspan="4">SVM</td>
+      <td class="tg-header-left tg-right-border">Acc</td>
+      
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb"><span>0.65</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.64</span></td>
+      <td class="tg-4vrb"><span>0.69</span></td>
+      <td class="tg-4vrb"><span>0.64</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.62</span></td>
+      <td class="tg-tfm4"><span>0.78</span></td>
+      <td class="tg-tfm4"><span>0.84</span></td>
+      <td class="tg-tfm4"><span>0.85</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Prec</td>
+      
+      <td class="tg-4vrb"><span>0.51</span></td>
+      <td class="tg-4vrb"><span>0.62</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.31</span></td>
+      <td class="tg-4vrb"><span>0.51</span></td>
+      <td class="tg-4vrb"><span>0.59</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.29</span></td>
+      <td class="tg-tfm4"><span>0.58</span></td>
+      <td class="tg-tfm4"><span>0.91</span></td>
+      <td class="tg-tfm4"><span>0.63</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border">Rec</td>
+      
+      <td class="tg-4vrb"><span>0.65</span></td>
+      <td class="tg-4vrb"><span>0.67</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.56</span></td>
+      <td class="tg-4vrb"><span>0.68</span></td>
+      <td class="tg-4vrb"><span>0.71</span></td>
+      <td class="tg-4vrb tg-right-border"><span>0.56</span></td>
+      <td class="tg-4vrb"><span>0.78</span></td>
+      <td class="tg-4vrb"><span>0.74</span></td>
+      <td class="tg-4vrb"><span>0.71</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border">ROC</td>
+      
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.73</span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span>0.67</span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.72</span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>0.73</span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span>0.66</span>
+      </td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.82</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.94</span></td>
+      <td class="tg-tfm4 tg-bottom-border"><span>0.82</span></td>
+    </tr>
+  </tbody>
+</table>
+  </body>
+</html>

@@ -1,0 +1,349 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>List of selected features</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" href="images/favicon.png" />
+<style type="text/css">
+  .tg {
+    border-spacing: 0;
+    border-color: black;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  .tg td {
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg th {
+    border-style: solid;
+    border-width: 1px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+  }
+
+  .tg .tg-header-left {
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .tg .tg-right-border {
+    border-right: 2px solid;
+  }
+
+  .tg .tg-bottom-border {
+    border-bottom: 2px solid;
+    width: 100px
+  }
+
+  .tg .tg-4vrb {
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .tg .tg-tfm4 {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+  }
+</style>
+</head>
+<body>
+<table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-tfm4 tg-right-border" >Model</th>
+      <th class="tg-tfm4 tg-right-border" colspan="3">ANOVA</th>
+      <th class="tg-tfm4 tg-right-border" colspan="3">ANOVA + RF</th>
+      <th class="tg-tfm4" colspan="3">LASSO</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="tg-tfm4">
+      <td class="tg-right-border tg-bottom-border" >Dataset</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-right-border tg-bottom-border">B</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-right-border tg-bottom-border">B</td>
+      <td class="tg-bottom-border">H</td>
+      <td class="tg-bottom-border">P</td>
+      <td class="tg-bottom-border">B</td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border tg-right-border " rowspan="9">
+        Non-Interaction Features
+      </td>
+      
+      <td class="tg-4vrb"><span>city_type_1</span></td>
+      <td class="tg-4vrb"><span>country_CZ</span></td>
+      <td class="tg-4vrb tg-right-border"><span>city_type_0</span></td>
+      <td class="tg-4vrb"><span>load_time_no_buy</span></td>
+      <td class="tg-4vrb"><span>effective_duration_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span>pv_product_mean_eff_duration_no_buy</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_no_buy</span></td>
+      <td class="tg-4vrb"><span>country_SK</span></td>
+      <td class="tg-4vrb"><span>city_type_0</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span>device.type_mobile</span></td>
+      <td class="tg-4vrb"><span>country_SK</span></td>
+      <td class="tg-4vrb tg-right-border"><span>city_type_1</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_no_buy</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span>load_time_no_buy</span></td>
+      <td class="tg-4vrb"><span>user_mean_eff_duration</span></td>
+      <td class="tg-4vrb"><span>effective_duration_buy</span></td>
+      <td class="tg-4vrb"><span>city_type_1</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span>browser.name_Chrome</span></td>
+      <td class="tg-4vrb"><span>city_type_0</span></td>
+      <td class="tg-4vrb tg-right-border"><span>browser.name_-</span></td>
+      <td class="tg-4vrb"><span>day_1</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span>n_sessions</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_buy</span></td>
+      <td class="tg-4vrb"><span>day_2</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_no_buy</span></td>
+      <td class="tg-4vrb"><span>effective_duration_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span>pv_product_mean_eff_duration_no_buy</span>
+      </td>
+      <td class="tg-4vrb"><span>user_mean_eff_duration</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span>load_time_no_buy</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_no_buy</span></td>
+      <td class="tg-4vrb"><span>effective_duration_buy</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span>user_mean_eff_duration</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span>load_time_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_sessions</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span>day_1</span></td>
+      <td class="tg-4vrb"><span>user_mean_eff_duration</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span>n_sessions</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_sessions</span></td>
+      <td class="tg-4vrb"><span>load_time_no_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span>load_time_no_buy</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>mean_price</span></td>
+      <td class="tg-4vrb"><span>pv_product_mean_eff_duration_no_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span>day_1</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>user_mean_eff_duration</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>time_1</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-bottom-border tg-right-border" rowspan="4">
+        Ig Features
+      </td>
+      <td class="tg-4vrb"><span>n_filter_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_pageviews_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span>n_click_buy</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_events_buy</span></td>
+      <td class="tg-4vrb tg-right-border">n_click_buy<span></span></td>
+      <td class="tg-4vrb"><span>n_input_buy</span></td>
+      <td class="tg-4vrb"><span>n_click_buy</span></td>
+      <td class="tg-4vrb"><span>n_pageviews_no_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_click_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_click_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span>n_click_buy</span></td>
+      <td class="tg-4vrb"><span>n_scroll_move_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_input_buy</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_events_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_pageviews_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span>n_filter_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_events_buy</span></td>
+      <td class="tg-4vrb"><span>n_click_buy</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>n_events_buy</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border "><span></span></td>
+      <td class="tg-4vrb tg-bottom-border "><span>n_events_no_buy</span></td>
+      <td class="tg-4vrb tg-bottom-border tg-right-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border "><span></span></td>
+      <td class="tg-4vrb tg-bottom-border "><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>n_events_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-header-left tg-right-border tg-bottom-border" rowspan="7">
+        Ie Features
+      </td>
+      <td class="tg-4vrb"><span>n_unique_category_u</span></td>
+      <td class="tg-4vrb"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span>referrer1_google</span></td>
+      <td class="tg-4vrb"><span>n_unique_category_u</span></td>
+      <td class="tg-4vrb"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_product_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_category_no_buy</span></td>
+      <td class="tg-4vrb tg-right-border"><span>referrer1_-</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span>n_category_no_buy</span></td>
+      <td class="tg-4vrb"><span>n_non_product_buy</span></td>
+      <td class="tg-4vrb"><span>n_category_no_buy</span></td>
+      <td class="tg-4vrb"><span>referrer1_-</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span>n_category_no_buy</span>
+      </td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb"><span>n_product_buy</span></td>
+      <td class="tg-4vrb"><span>n_top_category_u</span></td>
+      <td class="tg-4vrb"><span>n_non_product_buy</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span>n_non_product_no_buy</span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_unique_category_u</span></td>
+      <td class="tg-4vrb"><span>n_non_product_no_buy</span></td>
+    </tr>
+    <tr>
+      
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_cart_no_buy</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb tg-right-border"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span></span></td>
+      <td class="tg-4vrb"><span>n_top_product_u</span></td>
+    </tr>
+    <tr>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-right-border tg-bottom-border">
+        <span></span>
+      </td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span></span></td>
+      <td class="tg-4vrb tg-bottom-border"><span>n_unique_product_u</span></td>
+    </tr>
+   
+   
+  </tbody>
+</table>
+</body>
