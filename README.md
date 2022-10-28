@@ -134,7 +134,7 @@ He is a researcher and project manager at [UXtweak](https://www.uxtweak.com/). I
 - Email: adam.puskas([AT])uxtweak.com
   
 ### Peter Demcak
-He is a researcher at [UXtweak](https://www.uxtweak.com/). His current research topics of interest involve user behavior, UX research methods and design practices and machine learning.
+He is a researcher at [UXtweak](https://www.uxtweak.com/). His current research topics of interest involve user behavior, UX research methods and design practices, and machine learning.
 - Email: peter.demcak([AT])uxtweak.com
   
 ### Denisa Mensatorisova
