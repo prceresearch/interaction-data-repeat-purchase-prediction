@@ -1,8 +1,8 @@
-# Prediction of Repeat Customers in Ecommerce (PRCE)
+# Effect of low-level interaction data in repeat purchase prediction task
 
 ## About
 
-This is the official repository for the *Prediction of Repeat Customers in Ecommerce* research paper. The work concerns the task of repeat purchase prediction in the ecommerce domain. The repository contains basic information about the three anonymized datasets, which were collected as part of our work, alongside used Python scripts, enabling the reproduction of the data preprocessing as well as model evaluation steps. Figures containing extended evaluation results are also included. The authors may be contacted using the [contact information below](#a-authors) or prce.research([AT])gmail.com.
+This is the official repository for the *Effect of low-level interaction data in repeat purchase prediction task* research paper. The work concerns the task of repeat purchase prediction in the ecommerce domain. The repository contains basic information about the three anonymized datasets, which were collected as part of our work, alongside used Python scripts, enabling the reproduction of the data preprocessing as well as model evaluation steps. Figures containing extended evaluation results are also included. The authors may be contacted using the [contact information below](#a-authors) or prce.research([AT])gmail.com.
 
 #### Table of Contents
 * [Paper Citation](#a-citation)
