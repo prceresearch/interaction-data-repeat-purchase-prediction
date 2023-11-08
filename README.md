@@ -17,7 +17,7 @@ This is the official repository for the *Effect of low-level interaction data in
 [Published in the journal International Journal of Human–Computer Interaction - Open Access](https://www.tandfonline.com/doi/full/10.1080/10447318.2023.2175973)
 
 ```bibtex
-  @article{doi:10.1080/10447318.2023.2175973,
+@article{doi:10.1080/10447318.2023.2175973,
   author = {Eduard Kuric, Adam Puskas, Peter Demcak and Denisa Mensatorisova},
   title = {Effect of Low-Level Interaction Data in Repeat Purchase Prediction Task},
   journal = {International Journal of Human–Computer Interaction},
