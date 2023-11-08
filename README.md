@@ -14,7 +14,23 @@ This is the official repository for the *Effect of low-level interaction data in
 * [Licence](#a-licence)
 
 ## <a name="a-citation"> Paper Citation
-[Place for a bibtex-format paper citation]
+[Published in the journal International Journal of Human–Computer Interaction - Open Access](https://www.tandfonline.com/doi/full/10.1080/10447318.2023.2175973)
+
+```bibtex
+  @article{doi:10.1080/10447318.2023.2175973,
+  author = {Eduard Kuric, Adam Puskas, Peter Demcak and Denisa Mensatorisova},
+  title = {Effect of Low-Level Interaction Data in Repeat Purchase Prediction Task},
+  journal = {International Journal of Human–Computer Interaction},
+  volume = {0},
+  number = {0},
+  pages = {1-19},
+  year = {2023},
+  publisher = {Taylor & Francis},
+  doi = {10.1080/10447318.2023.2175973},
+  URL = {https://doi.org/10.1080/10447318.2023.2175973},
+  eprint = {https://doi.org/10.1080/10447318.2023.2175973}
+}
+```
 
 ## <a name="a-datasets"> Dataset
 As part of our work, we collected three new datasets containing interaction and non-interaction data from three real-world ecommerce stores - Dataset H ([Herbatica](https://www.herbatica.sk)), Dataset P ([Particle Peptides](https://particlepeptides.com/sk/)) and Dataset B ([Barefootky](https://www.barefootky.sk)). The data were collected using the [UXtweak](https://www.uxtweak.com) tool within one year and range from June 2nd, 2020 to June 1st, 2021. The collected data is organized into user sessions, comprising of low-level interaction events (such as mouse clicks and movements), non-interaction data (such as geolocation and temporal data) as well as the raw representation of the website's DOM. Each session belongs to a specific user and contains an anonymous identifier, which makes it possible to track repeat purchases for a user over a sequence of sessions.
